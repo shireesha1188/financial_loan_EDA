@@ -68,8 +68,19 @@ SELECT grade,ROUND(AVG(CAST(total_payment AS FLOAT)/loan_amount),2) AS recovery_
 GROUP BY grade
 ORDER BY recovery_rate DESC
 
+--6.state with the highest number of loans for  purpose along with the total loan amount.
 
-
+WITH CTE AS(
+  SELECT state,purpose,COUNT(*) AS total_count,
+  SUM(loan_amount) AS total_loan,
+  RANK() OVER(PARTITION BY state ORDER BY COUNT(*)DESC) AS ranked
+  FROM financial_loan
+  GROUP BY state,purpose
+  )
+  SELECT state,purpose,total_count,total_loan  FROM CTE
+  WHERE ranked=1
+  ORDER BY state
+  
 
 
 
