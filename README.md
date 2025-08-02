@@ -76,6 +76,12 @@ Created an **interactive Power BI dashboard** to present key findings:
 ![Power BI Report Screenshot 1](./loan_summary.png)  
 ![Power BI Report Screenshot 2](./loan_overview.png)
 
+## 🔗 View Power BI Dashboard
+
+[Click here to view the interactive Power BI report]
+(https://app.powerbi.com/view?r=eyJrIjoiNWI1MzU4MzQtNmU4Mi00NmNhLWJiMTktNzNiYjU5N2VmZTQwIiwidCI6ImE2MGJiMDAwLTgyODEtNGE5Zi04NmFmLTA0Yjc3OTg1MGQxNiJ9)
+
+
 
 ---
 ## 🛠️ Tech Stack
